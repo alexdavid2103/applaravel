@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     
-        <title>SEO Dream - Creative SEO HTML5 Template by TemplateMo</title>
+        <title>laravel</title>
     
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,18 +42,18 @@
               <nav class="main-nav">
                 <!-- ***** Logo Start ***** -->
                 <a href="index.html" class="logo">
-                  <h4>SEO Dream <img src="assets/images/logo-icon.png" alt=""></h4>
+                  <h4>SENA <img src="assets/images/logo-icon.png" alt=""></h4>
                 </a>
                 <!-- ***** Logo End ***** -->
                 <!-- ***** Menu Start ***** -->
                 <ul class="nav">
-                  <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                  <li class="scroll-to-section"><a href="#top" class="active">Inicio</a></li>
                   <li class="scroll-to-section"><a href="#features">Features</a></li>
-                  <li class="scroll-to-section"><a href="#about">About Us</a></li>
-                  <li class="scroll-to-section"><a href="#services">Services</a></li>
-                  <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-                  <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
-                  <li class="scroll-to-section"><div class="main-blue-button"><a href="{{route('login')}}">Login</a></div></li> 
+                  <li class="scroll-to-section"><a href="#about">Acerca de</a></li>
+                  <li class="scroll-to-section"><a href="#services">Servicio</a></li>
+                  <li class="scroll-to-section"><a href="#portfolio">Portafolio</a></li>
+                  <li class="scroll-to-section"><a href="#contact">Contacto</a></li> 
+                  <li class="scroll-to-section"><div class="main-blue-button"><a href="{{route('login')}}">Ingresar</a></div></li> 
                 </ul>        
                 <a class='menu-trigger'>
                     <span>Menu</span>
@@ -74,7 +74,7 @@
                 <div class="col-lg-6 align-self-center">
                   <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="row">
-                      <div class="col-lg-4 col-sm-4">
+                      {{-- <div class="col-lg-4 col-sm-4">
                         <div class="info-stat">
                           <h6>Agency Status:</h6>
                           <h4>Ready Work</h4>
@@ -91,13 +91,13 @@
                           <h6>Schedules</h6>
                           <h4>$450/Meeting</h4>
                         </div>
-                      </div>
+                      </div> --}}
                       <div class="col-lg-12">
-                        <h2>SEO &amp; Digital Marketing Agency</h2>
+                        <h2>SENA &amp; Centro de Calificaciones</h2>
                       </div>
                       <div class="col-lg-12">
                         <div class="main-green-button scroll-to-section">
-                          <a href="{{route('register')}}">Register</a>
+                          <a href="{{route('register')}}">Registrarse</a>
                         </div>
                       </div>
                     </div>

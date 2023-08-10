@@ -31,41 +31,40 @@
                         <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
                       </div>
       
-                      <form action="{{route('login')}}" method="POST">
+                      <form action="{{route('register')}}" method="POST">
                         @csrf
                         <p>Registrarse</p>
 
                         <div class="form-outline mb-4">
-                            <input type="name" id="name" class="form-control"
+                            <input type="text" name="name" id="name" class="form-control"
                               placeholder="ingrese su nombre" />
-                            <label class="form-label" for="form2Example11">nombre</label>
+                            <label class="form-label"  for="form2Example11">nombre</label>
                           </div>
       
                         <div class="form-outline mb-4">
-                          <input type="email" id="form2Example11" class="form-control"
+                          <input type="email" name="email" id="form2Example11" class="form-control"
                             placeholder="ingresar correo" />
-                          <label class="form-label" for="form2Example11">correo</label>
+                          <label class="form-label"  for="form2Example11">correo</label>
                         </div>
       
                         <div class="form-outline mb-4">
-                          <input type="password" id="form2Example22" class="form-control" />
-                          <label class="form-label" for="form2Example22">Password</label>
+                          <input type="password" name="password" id="form2Example22" class="form-control" />
+                          <label class="form-label"  for="form2Example22">contraseña</label>
                         </div>
 
                         <div class="form-outline mb-4">
-                            <input type="password" id="form2Example22" class="form-control" />
-                            <label class="form-label" for="form2Example22"> confrimar Password</label>
+                            <input type="password" name="password_confirmation" id="form2Example22" class="form-control" />
+                            <label class="form-label"  for="form2Example22"> confirmar Password</label>
                           </div>
       
                         <div class="text-center pt-1 mb-5 pb-1">
-                          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
-                            in</button>
+                          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Registrarse</button>
                         
                         </div>
       
                         <div class="d-flex align-items-center justify-content-center pb-4">
-                          <p class="mb-0 me-2">Don't have an account?</p>
-                          <button type="button" class="btn btn-outline-danger">Registrarse</button>
+                          <p class="mb-0 me-2">¿Ya tienes una cuenta?</p>
+                          <a href="{{route('login')}}" class="btn btn-outline-danger">Iniciar Sesión</a>
                         </div>
       
                       </form>
@@ -74,10 +73,10 @@
                   </div>
                   <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                     <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                      <h4 class="mb-4">We are more than just a company</h4>
+                      {{-- <h4 class="mb-4">We are more than just a company</h4>
                       <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> --}}
                     </div>
                   </div>
                 </div>
