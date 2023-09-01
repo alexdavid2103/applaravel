@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
     <style>
         body {
             padding-top: 70px;
@@ -34,6 +35,14 @@
                         <a class="nav-link" href="">Soporte y ayuda&nbsp;<i class="fa fa-hands-helping"></i></a>
                     </li>
                 </ul> --}}
+            </div>
+            <div class="close_seccion">
+                <a class="dropdown-item" href="{{ url('logout') }}"
+                onclick="event.preventDefault(); localStorage.clear();  document.getElementById('logout-form').submit();">
+                <i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+                <form id="logout-form" action="{{ url('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
             </div>
         </nav>
     </nav>

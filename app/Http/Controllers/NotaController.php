@@ -46,6 +46,22 @@ class NotaController extends Controller
         return redirect()->route('estudiantes.show_notas', ['id' => $idEstudiante]);
     }
 
+    public function update(Request $request)
+    {
+        $idEstudiante = $request->input('id_estudiante');
+        $idMateria = $request->input('id_materia');
+        $puntaje = $request->input('puntaje');
+
+        $nota = new Nota([
+            'puntaje' => $puntaje,
+            'id_estudiante' => $idEstudiante,
+            'id_materia' => $idMateria,
+        ]);
+        $nota->guardar();
+
+        return redirect()->route('estudiantes.show_notas', ['id' => $idEstudiante]);
+    }
+
     
 
     

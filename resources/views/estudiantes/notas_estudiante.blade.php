@@ -26,6 +26,14 @@
                             {{ $materia->nombre }}
                         </td>
                         <td>
+                            <form action="{{ route('notas.guardar') }}" method="POST" class="form-inline">
+                                @csrf
+                                <input type="hidden" value="{{ $estudiante->id }}" name="id_estudiante">
+                                <input type="hidden" value="{{ $materia->id }}" name="id_materia">
+                                <input value="{{ $materia->puntaje }}" required min="0" name="puntaje" placeholder="Escriba la calificación" type="number" class="form-control">
+                                <button class="btn btn-success mx-2">Guardar</button>
+                            </form>
+                            
                             <form action="{{ route('notas.update') }}" method="POST" class="form-inline">
                                 @csrf
                                 <input type="hidden" value="{{ $estudiante->id }}" name="id_estudiante">

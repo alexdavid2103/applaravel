@@ -8,9 +8,12 @@ use App\Models\Materia;
 
 class MateriaController extends Controller
 {
+    // Método para mostrar la lista de materias
     public function index()
     {
+         // Recupera todas las materias de la base de datos utilizando el modelo Materia    
         $materias = Materia::obtener();
+         // Retorna la vista 'materias.index' y pasa las materias como datos
         return view('materias.index', compact('materias'));
     }
 

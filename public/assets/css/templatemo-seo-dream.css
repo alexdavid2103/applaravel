@@ -134,6 +134,14 @@ img {
   overflow: hidden;
 }
 
+.close_seccion a {
+  color: #fff;
+}
+
+.close_seccion a:hover{
+  background-color: green;
+  color: #fff;
+}
 /* 
 ---------------------------------------------
 global styles
