@@ -139,7 +139,7 @@ img {
 }
 
 .close_seccion a:hover{
-  background-color: green;
+  background-color: transparent;
   color: #fff;
 }
 /* 
